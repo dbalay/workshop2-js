@@ -1,0 +1,13 @@
+Algorithme tri_par_insertion(tableau)
+    Pour i de 1 à length(tableau) faire
+        element_a_inserer = tableau[i]
+        j = i - 1
+
+        Tant que j >= 0 et tableau[j] > element_a_inserer faire
+            tableau[j + 1] = tableau[j]
+            j = j - 1
+        Fin Tant Que
+
+        tableau[j + 1] = element_a_inserer
+    Fin Pour
+Fin Algorithme tri_par_insertion.
